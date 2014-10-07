@@ -34,7 +34,7 @@ done
 # Each line in the option is a command, but do test whether it is not empty.
 ##
 COMMANDS=''
-
+info "test commands"
 IFS=$'\n'
 for c in $WERCKER_MULTIPLE_SSH_COMMANDS_COMMANDS ; do
     if [ -n "$c" ] ; then
