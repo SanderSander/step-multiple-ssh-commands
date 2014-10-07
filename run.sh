@@ -35,9 +35,7 @@ done
 ##
 COMMANDS=''
 
-IFS="
-"
-
+IFS=$'\n'
 for c in $WERCKER_MULTIPLE_SSH_COMMANDS_COMMANDS ; do
     if [ -n "$c" ] ; then
         COMMANDS+="$c && "
